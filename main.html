@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio Example</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
-</body>
+<!-- Header with main heading -->
+<header>
+  <h1 role="heading" aria-level="1">My Portfolio</h1>
+</header>
 
-</html>
+<!-- Navigation section -->
+<nav role="navigation">
+  <ul role="list">
+    <li role="listitem"><a href="#about">About Me</a></li>
+    <li role="listitem"><a href="#projects">Projects</a></li>
+    <li role="listitem"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Main content area -->
+<main>
+  
+  <!-- About Me section -->
+  <section id="about">
+    <h2 role="heading" aria-level="2">About Me</h2>
+    <p role="paragraph">I am passionate about web accessibility and creating inclusive user experiences.</p>
+    <img src="profile.jpg" alt="Profile Picture" role="img">
+  </section>
+  
+  <!-- Projects section -->
+  <section id="projects">
+    <h2 role="heading" aria-level="2">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Project 1: Description of Project 1...</li>
+      <li role="listitem">Project 2: Description of Project 2...</li>
+      <li role="listitem">Project 3: Description of Project 3...</li>
+    </ul>
+  </section>
+	
+  <section id="contact">
+    <h2 role="heading" aria-level="2">Contact</h2>
+    <p role="paragraph">You can reach me via email at <a
